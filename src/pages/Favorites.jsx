@@ -36,7 +36,6 @@ const EmptyMessage = styled.p`
 export default function Favorites() {
   const [favorites, setFavorites] = useState([]);
 
-  // Load favorites from localStorage
   useEffect(() => {
     const loadFavorites = () => {
       const favs = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -45,7 +44,6 @@ export default function Favorites() {
     
     loadFavorites();
     
-    // Listen for changes from other tabs
     window.addEventListener('storage', loadFavorites);
     return () => window.removeEventListener('storage', loadFavorites);
   }, []);

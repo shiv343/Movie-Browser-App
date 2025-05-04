@@ -8,7 +8,7 @@ import styled from 'styled-components';
 const PageContainer = styled.div`
   min-height: 100vh;
   background: #121212;
-  padding-top: 80px; /* Navbar height */
+  padding-top: 80px; 
 `;
 const Results = styled.div`
   display: grid;
@@ -16,7 +16,7 @@ const Results = styled.div`
   gap: 2rem;
   padding: 2rem;
   max-width: 1400px;
-  margin: 0 auto;/* Account for fixed navbar */
+  margin: 0 auto;
 `;
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
     if (query) {
       searchMovies(query).then(setMovies);
     } else {
-      // Optional: Show popular movies by default
+      // Show popular movies by default
       searchMovies('home alone').then(setMovies);
     }
   }, [location.search]);
