@@ -1,12 +1,24 @@
-# React + Vite
+# 🎬 Movie Browser App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-18.2-blue)](https://reactjs.org/)
+[![React Router](https://img.shields.io/badge/React_Router-6.3-orange)](https://reactrouter.com/)
+[![OMDb API](https://img.shields.io/badge/OMDb_API-Free-green)](https://www.omdbapi.com/)
 
-Currently, two official plugins are available:
+A sleek movie discovery app with favorites functionality, built with modern React.
+### 🎥 Movie Discovery
+- Search any movie by title
+- Beautiful responsive grid layout
+- Movie details with posters, year, and ratings
+- Glassmorphism UI design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ❤️ Favorites System
+- Add/remove movies to favorites
+- Persistent storage using localStorage
+- Instant updates across the app
+- Favorites page with all saved movies
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ⚡ Performance Optimizations
+- Debounced search input
+- API response caching
+- Lazy-loaded images
+- AbortController for API calls
