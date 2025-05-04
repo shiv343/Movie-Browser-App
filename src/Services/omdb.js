@@ -8,11 +8,9 @@ export async function searchMovies(title) {
   const data = await res.json();
   return data.Response === 'True' ? data.Search : [];
 }
+export async function getMovieDetails(id) {
+    const response = await fetch(`${BASE_URL}?apikey=${API_KEY}&i=${id}&plot=full`);
+    const data = await response.json();
+    return data;
+  }
 
-export async function getMovieDetails(imdbID) {
-  const res = await fetch(
-    `${BASE_URL}?apikey=${API_KEY}&i=${imdbID}&plot=full`
-  );
-  const data = await res.json();
-  return data;
-}

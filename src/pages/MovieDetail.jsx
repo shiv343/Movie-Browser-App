@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import { getMovieDetails } from '../services/omdbService';
+import { getMovieDetails } from '../Services/omdb';
 
 const Container = styled.div`
   padding: 2rem;

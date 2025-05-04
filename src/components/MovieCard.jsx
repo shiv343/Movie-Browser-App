@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 const Card = styled.div`
   position: relative;
   background: rgba(17, 17, 17, 0.1);
@@ -14,6 +14,7 @@ const Card = styled.div`
   transition: transform 0.2s ease;
   &:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
 `;
 
