@@ -13,4 +13,3 @@ export async function getMovieDetails(id) {
     const data = await response.json();
     return data;
   }
-

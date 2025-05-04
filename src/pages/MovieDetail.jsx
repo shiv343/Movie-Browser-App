@@ -32,7 +32,9 @@ const DetailItem = styled.p`
   margin: 0.5rem 0;
 `;
 
+
 export default function MovieDetail() {
+    
   const { imdbID } = useParams();
   const [movie, setMovie] = useState(null);
 
@@ -40,7 +42,7 @@ export default function MovieDetail() {
     getMovieDetails(imdbID).then(setMovie);
   }, [imdbID]);
 
-  if (!movie) return <p style={{ color: 'white' }}>Loading...</p>;
+  if (!movie) return <p style={{ color: 'black' }}>Loading...</p>;
 
   return (
     <Container>
